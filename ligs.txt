@@ -1,0 +1,155 @@
+mcblk0p87" ino=465284 scontext=u:r:untrusted_app:s0:c53,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c53,c257,c512,c768 tclass=file app=org.test.myapp_test_1
+10-19 00:06:11.536  5286  5286 W SDLThread: type=1400 audit(0.0:12257): avc: granted { execute } for path="/data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/core/window/_window_sdl2.so" dev="mmcblk0p87" ino=227025 scontext=u:r:untrusted_app:s0:c53,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c53,c257,c512,c768 tclass=file app=org.test.myapp_test_1
+10-19 00:06:11.546  3892  3892 W TcmReceiver: type=1400 audit(0.0:12258): avc: denied { write } for name="tcm" dev="tmpfs" ino=18221 scontext=u:r:joyose_app:s0 tcontext=u:object_r:vendor_dpmtcm_socket:s0 tclass=sock_file permissive=0
+10-19 00:06:11.579  5286  5322 I python  : [INFO   ] [Window      ] Provider: sdl2
+10-19 00:06:11.576  5286  5286 W SDLThread: type=1400 audit(0.0:12259): avc: granted { execute } for path="/data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/cgl_backend/cgl_glew.so" dev="mmcblk0p87" ino=212376 scontext=u:r:untrusted_app:s0:c53,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c53,c257,c512,c768 tclass=file app=org.test.myapp_test_1
+10-19 00:06:11.600  5286  5322 V hidapi  : initialize(true, false)
+10-19 00:06:11.608  5286  5322 V SDL     : setOrientation() requestedOrientation=1 width=800 height=600 resizable=true hint=Portrait
+10-19 00:06:11.611  5286  5322 I SDL/APP : pixel format wanted SDL_PIXELFORMAT_RGBA8888 (1), got SDL_PIXELFORMAT_RGBA8888 (1)
+10-19 00:06:11.613  5286  5322 I python  : [INFO   ] [GL          ] Using the "OpenGL ES 2" graphics system
+10-19 00:06:11.619  5286  5322 I python  : [INFO   ] [GL          ] Backend used <sdl2>
+10-19 00:06:11.620  5286  5322 I python  : [INFO   ] [GL          ] OpenGL version <b'OpenGL ES 3.2 V@0502.0 (GIT@03e27f8, I326e6aff90, 1604374052) (Date:11/02/20)'>
+10-19 00:06:11.620  5286  5322 I python  : [INFO   ] [GL          ] OpenGL vendor <b'Qualcomm'>
+10-19 00:06:11.620  5286  5322 I python  : [INFO   ] [GL          ] OpenGL renderer <b'Adreno (TM) 610'>
+10-19 00:06:11.621  5286  5322 I python  : [INFO   ] [GL          ] OpenGL parsed version: 3, 2
+10-19 00:06:11.621  5286  5322 I python  : [INFO   ] [GL          ] Texture max size <16384>
+10-19 00:06:11.622  5286  5322 I python  : [INFO   ] [GL          ] Texture max units <16>
+10-19 00:06:11.707  2881  7784 I SarService: Receiver polling >>>> Change receiver mode: off
+10-19 00:06:11.711  5286  5322 I python  : [INFO   ] [Window      ] auto add sdl2 input provider
+10-19 00:06:11.714  5286  5322 I python  : [INFO   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+10-19 00:06:11.817  1555  4342 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-19 00:06:11.908  2881  7784 I SarService: Receiver polling >>>> Change receiver mode: off
+10-19 00:06:12.035  5286  5322 I python  : [WARNING] [Base        ] Unknown <android> provider
+10-19 00:06:12.035  5286  5322 I python  : [INFO   ] [Base        ] Start application main loop
+10-19 00:06:12.055  5286  5322 I python  : [INFO   ] [GL          ] NPOT texture support is available
+10-19 00:06:12.056  4267  4267 I CNSS    : Failed to send nl message
+10-19 00:06:12.082  4267  4267 I chatty  : uid=1000(system) /system/vendor/bin/cnss_diag identical 11 lines
+10-19 00:06:12.083  4267  4267 I CNSS    : Failed to send nl message
+10-19 00:06:12.109  2881  7784 I SarService: Receiver polling >>>> Change receiver mode: off
+10-19 00:06:12.113  4267  4267 I CNSS    : Failed to send nl message
+10-19 00:06:12.124  4267  4267 I chatty  : uid=1000(system) /system/vendor/bin/cnss_diag identical 3 lines
+10-19 00:06:12.126  4267  4267 I CNSS    : Failed to send nl message
+10-19 00:06:12.153  5286  5286 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-19 00:06:12.169  5286  5322 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x40 in tid 5322 (SDLThread), pid 5286 (SDLActivity)
+10-19 00:06:12.278  5329  5329 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+10-19 00:06:12.281   612   612 I tombstoned: received crash request for pid 5322
+10-19 00:06:12.283  5329  5329 I crash_dump64: performing dump of process 5286 (target tid = 5322)
+10-19 00:06:12.293  5329  5329 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-19 00:06:12.293  5329  5329 F DEBUG   : Build fingerprint: 'xiaomi/willow/willow:11/RKQ1.201004.002/V12.5.6.0.RCXMIXM:user/release-keys'
+10-19 00:06:12.293  5329  5329 F DEBUG   : Revision: '0'
+10-19 00:06:12.293  5329  5329 F DEBUG   : ABI: 'arm64'
+10-19 00:06:12.293  5329  5329 F DEBUG   : Timestamp: 2023-10-19 00:06:12+0700
+10-19 00:06:12.294  5329  5329 F DEBUG   : pid: 5286, tid: 5322, name: SDLThread  >>> org.test.myapp_test_1 <<<
+10-19 00:06:12.294  5329  5329 F DEBUG   : uid: 10309
+10-19 00:06:12.294  5329  5329 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x40
+10-19 00:06:12.294  5329  5329 F DEBUG   : Cause: null pointer dereference
+10-19 00:06:12.294  5329  5329 F DEBUG   :     x0  0000000000000001  x1  0000000000000000  x2  0000000000000003  x3  00000000ffffffff
+10-19 00:06:12.294  5329  5329 F DEBUG   :     x4  b4000071326f4cbc  x5  0000000000000003  x6  b4000071326f4f6c  x7  b40000713271f0c0
+10-19 00:06:12.294  5329  5329 F DEBUG   :     x8  0000000000000003  x9  0000000000000003  x10 00000071390c8794  x11 b4000071326f4cc4
+10-19 00:06:12.294  5329  5329 F DEBUG   :     x12 b40000713405906c  x13 00000071390c879c  x14 0000000000000000  x15 0000000000000000
+10-19 00:06:12.294  5329  5329 F DEBUG   :     x16 0000000000000001  x17 0000000000000000  x18 0000000000000000  x19 00000071390c88f0
+10-19 00:06:12.294  5329  5329 F DEBUG   :     x20 b4000071326f4c00  x21 b400007134056bc0  x22 0000000000000000  x23 0000000000000003
+10-19 00:06:12.294  5329  5329 F DEBUG   :     x24 b40000713271f150  x25 0000000000000001  x26 0000000000000000  x27 0000000000000001
+10-19 00:06:12.294  5329  5329 F DEBUG   :     x28 0000000000000068  x29 00000071390c87a0
+10-19 00:06:12.294  5329  5329 F DEBUG   :     lr  0000007188b0cf14  sp  00000071390c8760  pc  0000007188b1f760  pst 0000000060000000
+10-19 00:06:12.309  2881  7784 I SarService: Receiver polling >>>> Change receiver mode: off
+10-19 00:06:12.325  4267  4267 I CNSS    : Failed to send nl message
+10-19 00:06:12.479  5329  5329 F DEBUG   : backtrace:
+10-19 00:06:12.479  5329  5329 F DEBUG   :     NOTE: Function names and BuildId information is missing for some frames due
+10-19 00:06:12.479  5329  5329 F DEBUG   :     NOTE: to unreadable libraries. For unwinds of apps, only shared libraries
+10-19 00:06:12.479  5329  5329 F DEBUG   :     NOTE: found under the lib/ directory are readable.
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #00 pc 0000000000394760  /vendor/lib64/egl/libGLESv2_adreno.so (!!!0000!7b4d3d680da059de73d7f9795dc456!03e27f8!+368) (BuildId: d850134b56d1747b00c32685535928ca)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #01 pc 0000000000381f10  /vendor/lib64/egl/libGLESv2_adreno.so (!!!0000!f56be09eb88f86833124f1df42e945!03e27f8!+4176) (BuildId: d850134b56d1747b00c32685535928ca)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #02 pc 0000000000176f88  /vendor/lib64/egl/libGLESv2_adreno.so (!!!0000!6b200851123c7898055fe62ff9f71f!03e27f8!+616) (BuildId: d850134b56d1747b00c32685535928ca)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #03 pc 000000000016ec10  /vendor/lib64/egl/libGLESv2_adreno.so (!!!0000!77df12deb6a622478efa8fb9929034!03e27f8!+376) (BuildId: d850134b56d1747b00c32685535928ca)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #04 pc 000000000000ac68  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/vbo.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #05 pc 00000000000143b4  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #06 pc 0000000000008278  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/compiler.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #07 pc 00000000000122a0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #08 pc 0000000000011ae0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #09 pc 0000000000014b54  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #10 pc 000000000001607c  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #11 pc 0000000000008278  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/compiler.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #12 pc 00000000000122a0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #13 pc 0000000000011ae0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #14 pc 0000000000008278  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/compiler.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #15 pc 00000000000122a0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #16 pc 0000000000011ae0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #17 pc 0000000000014b54  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #18 pc 0000000000008278  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/compiler.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #19 pc 00000000000122a0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #20 pc 0000000000011ae0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #21 pc 0000000000014b54  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #22 pc 0000000000008278  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/compiler.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #23 pc 00000000000122a0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #24 pc 0000000000011ae0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #25 pc 0000000000014b54  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #26 pc 0000000000008278  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/compiler.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #27 pc 00000000000122a0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #28 pc 0000000000011ae0  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #29 pc 0000000000014b54  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #30 pc 000000000001607c  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #31 pc 0000000000020968  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/graphics/instructions.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #32 pc 00000000001729ac  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #33 pc 00000000002390cc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #34 pc 0000000000234edc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so (_PyEval_EvalFrameDefault+9272)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #35 pc 0000000000232984  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #36 pc 000000000016bb58  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #37 pc 0000000000025c34  /data/data/org.test.myapp_test_1/files/app/_python_bundle/site-packages/kivy/_event.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #38 pc 00000000001725f0  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #39 pc 00000000002390cc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #40 pc 0000000000234edc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so (_PyEval_EvalFrameDefault+9272)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #41 pc 0000000000232984  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #42 pc 00000000002390cc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #43 pc 0000000000234edc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so (_PyEval_EvalFrameDefault+9272)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #44 pc 0000000000232984  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #45 pc 00000000002390cc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #46 pc 0000000000234edc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so (_PyEval_EvalFrameDefault+9272)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #47 pc 0000000000232984  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #48 pc 00000000002390cc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #49 pc 00000000002349c0  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so (_PyEval_EvalFrameDefault+7964)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #50 pc 0000000000232984  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #51 pc 00000000002390cc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #52 pc 0000000000234edc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so (_PyEval_EvalFrameDefault+9272)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #53 pc 0000000000232984  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #54 pc 00000000002328cc  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so (PyEval_EvalCode+104)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #55 pc 0000000000278fc4  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so (_PyRun_SimpleFileObject+1188)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #56 pc 000000000027986c  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libpython3.10.so (PyRun_SimpleFileExFlags+60)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #57 pc 0000000000002740  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libmain.so (SDL_main+2664) (BuildId: f41c77ce4c9ca9e092f8e701ff397d57db556126)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #58 pc 00000000000b0680  /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/lib/arm64/libSDL2.so (Java_org_libsdl_app_SDLActivity_nativeRunMain+772) (BuildId: e0462072e4cdc4e2796780c9d6f9dd59528f4d2d)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #59 pc 000000000013ced4  /apex/com.android.art/lib64/libart.so (art_quick_generic_jni_trampoline+148) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #60 pc 00000000001337e8  /apex/com.android.art/lib64/libart.so (art_quick_invoke_static_stub+568) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #61 pc 00000000001a8a94  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+228) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #62 pc 0000000000318768  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+376) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #63 pc 000000000030ea94  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+996) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #64 pc 000000000067f614  /apex/com.android.art/lib64/libart.so (MterpInvokeStatic+548) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #65 pc 000000000012d994  /apex/com.android.art/lib64/libart.so (mterp_op_invoke_static+20) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #66 pc 000000000000c346  [anon:dalvik-classes4.dex extracted in memory from /data/app/~~oVBjpcDh_bgHD7w1BFKkow==/org.test.myapp_test_1-re0YfJ2zMMy5AmqpGSitlg==/base.apk!classes4.dex] (org.libsdl.app.SDLMain.run+166)
+10-19 00:06:12.480  5329  5329 F DEBUG   :       #67 pc 000000000067e394  /apex/com.android.art/lib64/libart.so (MterpInvokeInterface+1808) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #68 pc 000000000012da14  /apex/com.android.art/lib64/libart.so (mterp_op_invoke_interface+20) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #69 pc 00000000000eb840  /apex/com.android.art/javalib/core-oj.jar (java.lang.Thread.run+8)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #70 pc 0000000000306090  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool) (.llvm.829997668608136289)+268) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #71 pc 000000000066b3c4  /apex/com.android.art/lib64/libart.so (artQuickToInterpreterBridge+780) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #72 pc 000000000013cff8  /apex/com.android.art/lib64/libart.so (art_quick_to_interpreter_bridge+88) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #73 pc 0000000000133564  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #74 pc 00000000001a8a78  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+200) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #75 pc 0000000000554e34  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithJValues<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, jvalue const*)+460) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #76 pc 00000000005a41d0  /apex/com.android.art/lib64/libart.so (art::Thread::CreateCallback(void*)+1308) (BuildId: 06dffab2a21982e2bd2effff0158c7cf)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #77 pc 00000000000eb968  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+64) (BuildId: 4ba2121e6580a7f88bce586ed966851c)
+10-19 00:06:12.481  5329  5329 F DEBUG   :       #78 pc 000000000008bb88  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: 4ba2121e6580a7f88bce586ed966851c)
+10-19 00:06:12.481  4267  4267 I chatty  : uid=1000(system) /system/vendor/bin/cnss_diag identical 23 lines
+10-19 00:06:12.484  4267  4267 I CNSS    : Failed to send nl message
+10-19 00:06:12.510  2881  7784 I SarService: Receiver polling >>>> Change receiver mode: off
+10-19 00:06:12.522  4267  4267 I CNSS    : Failed to send nl message
+10-19 00:06:12.557  4267  4267 I chatty  : uid=1000(system) /system/vendor/bin/cnss_diag identical 5 lines
+10-19 00:06:12.559  4267  4267 I CNSS    : Failed to send nl message
+10-19 00:06:12.586  3892  3892 W TcmReceiver: type=1400 audit(0.0:12262): avc: denied { write } for name="tcm" dev="tmpfs" ino=18221 scontext=u:r:joyose_app:s0 tcontext=u:object_r:vendor_dpmtcm_socket:s0 tclass=sock_file permissive=0
+10-19 00:06:12.627   742  3124 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Received IBS_WAKE_IND: 0xFD
+10-19 00:06:12.627   742  3124 D vendor.qti.bluetooth@1.0-ibs_handler: SerialClockVote: vote for UART CLK ON
+10-19 00:06:12.629   742  3124 D vendor.qti.bluetooth@1.0-wake_lock: Acquire wakelock is acquired 
+10-19 00:06:12.629   742  3124 I vendor.qti.bluetooth@1.0-ibs_handler: ProcessIbsCmd: Writing IBS_WAKE_ACK
+10-19 00:06:12.630  4267  4267 I CNSS    : Failed to send nl message
+10-19 00:06:12.630  2498  3126 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1849)] btm_ble_process_adv_addr: bda=c0:c4:26:0d:57:31
+10-19 00:06:12.630  2498  3126 V bt_stack: [VERBOSE1:btm_ble_gap.cc(2054)]  Waiting for scan response c0:c4:26:0d:57:31
+10-19 00:06:12.630  2498  3126 V bt_stack: [VERBOSE1:btm_ble_gap.cc(1849)] btm_ble_process_adv_addr: bda=c0:c4:26:0d:57:31
+10-19 00:06:12.630  2498  3126 V bt_stack: [VERBOSE1:btm_inq.cc(1019)] BTM_InqDbRead: bd addr c0:c4:26:0d:57:31
